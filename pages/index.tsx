@@ -1,7 +1,3 @@
-import Head from "next/head";
-import styles from "../styles/Home.module.css";
-import Counter from "./counter";
-import { Navigation } from "../components/Navigation/Navigation";
 import { Layout } from "../components/Layout";
 import { NextPage } from "next";
 import { IndexLeftContent } from "../components/Home/IndexLeftContent";
