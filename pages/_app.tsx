@@ -2,11 +2,12 @@ import { ThemeProvider } from '@emotion/react';
 import { useEffect, useState } from 'react';
 import theme from '../styles/theme'
 import '../styles/globals.css'
+import { NextPage } from 'next';
 interface Props {
-  Component: React.FC,
+  Component: NextPage,
   pageProps: any
 }
-const MyApp:React.FC<Props> = ({ Component, pageProps }) => {
+const MyApp:NextPage<Props> = ({ Component, pageProps }) => {
   useEffect(() => {
     document.onscroll = checkScroll
 })

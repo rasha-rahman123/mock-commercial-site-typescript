@@ -1,3 +1,4 @@
+import { NextPage } from "next";
 import React from "react";
 import { AboutContent } from "../components/About/AboutContent";
 import { Layout } from "../components/Layout";
@@ -7,7 +8,7 @@ interface aboutProps {
   wind: number;
 }
 
-const about: React.FC<aboutProps> = ({ scroll,wind }) => {
+const about: NextPage<aboutProps> = ({ scroll,wind }) => {
   return (
     <Layout scroll={scroll} title="About Mock">
       <div
