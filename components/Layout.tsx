@@ -15,7 +15,7 @@ interface LayoutProps {
 }
 
 export const Layout = ({ children, title = 'This is the default title', scroll}: LayoutProps)=> {
-  return (
+  return ( //3
     <>
     <Head>
             <title>{title}</title>
