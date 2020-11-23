@@ -38,7 +38,7 @@ export const Home: NextPage<Props> = ({scroll}) => {
                 transform:
                   status === "entered" ? ["translateX(10vw)","translateX(0vw)","translateX(-10vw)"] : "translateX(-75vw)",
                 transition: "all 500ms ease-in-out",
-              }}
+              }} //n
             >
               <IndexLeftContent />
             </Box>
