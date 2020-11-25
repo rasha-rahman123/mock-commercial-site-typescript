@@ -6,7 +6,7 @@ import { SlantedCanvasWhite } from "./DesignCanvas/SlantedCanvasWhite";
 import { SocialLayout } from "./SocialLayout";
 import { SlantedCanvasDark } from "./DesignCanvas/SlantedCanvasDark";
 import { Footer } from "./Footer";
-import { RectangleCanvas } from "./DesignCanvas/RectangleCanvas";
+
 
 interface LayoutProps {
     children?: ReactNode,
@@ -29,7 +29,7 @@ export const Layout = ({ children, title = 'This is the default title', scroll}:
       }}>{children}</div>
       <SocialLayout />
       <SlantedCanvasWhite height={title !== 'Mock Company Title' ? 100 : 60} />
-      <RectangleCanvas />
+  
      {((title === `Mock's Pricing`)  ||  (title === 'Mock Company Title') ) ? <></> : <SlantedCanvasDark />}
      <Footer text="Mock" />
     </div>

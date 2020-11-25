@@ -25,7 +25,9 @@ export const PersonBioContent: NextPage<PersonBioContentProps> = ({
     <Transition timeout={k * 1000} in={true} appear>
       {(status) => (
         <Box
+        key={k}
           sx={{
+            
             width: "96%",
             margin: "50px auto",
             fontSize: "1.2rem",
@@ -42,6 +44,7 @@ export const PersonBioContent: NextPage<PersonBioContentProps> = ({
           }}
         >
           <Box
+          key={k}
             sx={{
               width: ["100%", "100%", "40%", "40%", "40%"],
               padding: "0% 5% 0% 5%",
